@@ -1,6 +1,9 @@
 html {
   background-color: #f9f6ef;
+  box-sizing: border-box;
 }
+
+/* Text Styles */
 
 body {
   font-family: "Playfair Display", serif;
@@ -42,14 +45,91 @@ p {
   font-size: 1rem;
 }
 
-.small {
+.small-text {
   font-size: 0.8rem;
 }
+
+/* Link Styles */
 
 a {
   color: #f04f1c;
 }
 
+a.recipe-name {
+  color: #282828;
+}
+
+/* List Styles */
+
 li::marker {
   color: #f04f1c;
+}
+
+/* Container Styles */
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* Recipe Card Styles */
+
+.recipe-list {
+  display: flex;
+}
+
+.recipe-card {
+  background-color: #fff;
+  height: fit-content;
+  width: 300px;
+  padding: 16px;
+  margin: 0 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.062), 0 6px 20px 0 rgba(51, 51, 51, 0.015);
+}
+
+.recipe-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card.img.object-cover {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.recipe-name {
+  padding: 8px 0 0 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.recipe-category {
+  font-family: "Outfit", sans-serif;
+  background-color: #f04f1c;
+  color: white;
+  width: fit-content;
+  margin: -20px auto 0;
+  padding: 8px 16px;
+  text-align: center;
+  display: block;
+}
+
+.recipe-category.relative {
+  position: relative;  
+}
+
+
+
+/* Button Styles */
+
+.button {
+  background-color: #f04f1c;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
