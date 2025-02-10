@@ -3,11 +3,20 @@ html {
   box-sizing: border-box;
 }
 
+/* Container Styles */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 /* Text Styles */
 
 body {
   font-family: "Playfair Display", serif;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.75rem;
+  letter-spacing: 0.03em;
   color: #282828;
 }
 
@@ -43,6 +52,7 @@ h6 {
 
 p {
   font-size: 1rem;
+  max-width: 75ch;
 }
 
 .small-text {
@@ -59,18 +69,28 @@ a.recipe-name {
   color: #282828;
 }
 
+/* Button Styles */
+
+.button {
+  background-color: #f04f1c;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
 /* List Styles */
 
 li::marker {
   color: #f04f1c;
 }
 
-/* Container Styles */
-
-.container {
-  width: 900px;
-  margin: 0 auto;
+li {
+  max-width: 75ch;
 }
+
+/* ---------- HOME PAGE ---------- */
 
 /* Recipe Card Styles */
 
@@ -102,8 +122,11 @@ li::marker {
   font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
-  text-decoration: none;
   display: block;
+}
+
+.recipe-name:hover {
+  color: #f04f1c;
 }
 
 .recipe-category {
@@ -121,15 +144,22 @@ li::marker {
   position: relative;  
 }
 
+/* ---------- RECIPE PAGES ---------- */
 
-
-/* Button Styles */
-
-.button {
+.category-tag {
+  font-family: "Outfit", sans-serif;
   background-color: #f04f1c;
   color: white;
-  padding: 16px;
+  width: fit-content;
+  padding: 8px 16px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
+}
+
+.recipe-page-top h1, h4 {
+  margin: 24px auto;
+  line-height: 1em;
+}
+
+.recipe-page-top {
+  margin: 100px 0 20px 0;
 }
