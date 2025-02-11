@@ -6,7 +6,7 @@ html {
 /* Container Styles */
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -94,16 +94,23 @@ li {
 
 /* Recipe Card Styles */
 
-.recipe-list {
+.recipe-list {;
   display: flex;
+  flex-flow: row wrap;
+  align-items: top;
+  justify-content: space-between;
+  gap: 8px
+}
+
+.recipe-list div {;
+  margin-bottom: 24px; 
 }
 
 .recipe-card {
   background-color: #fff;
   height: fit-content;
-  width: 300px;
+  max-width: 400px;
   padding: 16px;
-  margin: 0 8px;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.062), 0 6px 20px 0 rgba(51, 51, 51, 0.015);
 }
